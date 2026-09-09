@@ -687,6 +687,37 @@ footer {
     padding: 14px 18px;
   }
 }
+.site-credit {
+  margin: 12px 0 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 12.5px;
+  letter-spacing: 0.01em;
+}
+.site-credit a {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  min-height: 44px;
+  padding: 10px 6px;
+  color: var(--green);
+  font-weight: 700;
+  text-decoration: none;
+}
+.site-credit a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.site-credit svg {
+  width: 12px;
+  height: 12px;
+}
+.auth-panel > .site-credit {
+  margin-top: 18px;
+}
+footer .site-credit {
+  margin: 0;
+}
 @media (max-width: 800px) { .auth-layout { grid-template-columns: 1fr; } .auth-story { min-height: 310px; gap: 48px; } .auth-footnote { display: none; } .account-actions span { display: none; } .internship-controls { align-items: stretch; flex-direction: column; } .internship-controls > div { align-items: stretch; flex-wrap: wrap; } .internship-controls > div:first-child { flex-direction: column; } .internship-controls select { min-width: 0; } .internship-editor { position: static; margin-top: 8px; } .form-row.three { grid-template-columns: 1fr; } }
 @media (max-width: 760px) {
   .header-inner {
